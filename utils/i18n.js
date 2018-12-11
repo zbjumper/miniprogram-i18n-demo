@@ -32,11 +32,11 @@ module.exports = {
       language = wx.getSystemInfoSync().language;
     }
     const pages = getCurrentPages();
-      pages.forEach(function (item) {
-        const i18n = getI18n(language);
-        item.setData({
-          i18n
-        });
-      })
+    pages.forEach(function (item) {
+      const i18n = getI18n(language);
+      item.setData({
+        i18n
+      });
+    })
   }
 }
